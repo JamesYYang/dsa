@@ -3,6 +3,7 @@ let findMissingNumber = (numbers, count) => {
     return;
   }
 
+  //初始化一个完整长度的数组，并把给定的数组填充进对应的位置
   let allNumbers = Array(count);
   numbers.forEach((n) => {
     allNumbers[n - 1] = n;
@@ -10,6 +11,7 @@ let findMissingNumber = (numbers, count) => {
 
   console.log(`Missing numbers in array [${numbers}], with total number ${count} is `)
   for (let i = 0; i < count; i++) {
+    //如果当前位置没有数据，那说明缺失了
     if (!allNumbers[i]) {
       console.log(i + 1);
     }
