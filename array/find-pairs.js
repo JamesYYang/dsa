@@ -35,7 +35,7 @@ let findPairsUsingMap = (numbers, n) => {
   })
 }
 
-//使用map，时间复杂度 O(n)
+//使用两端递进，时间复杂度 O(nlogn)，主要取决于排序算法
 let findPairsUsingTwoPoints = (numbers, n) => {
   if (!numbers || numbers.length < 2) {
     return;
