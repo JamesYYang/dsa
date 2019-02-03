@@ -1,6 +1,10 @@
 class LinkedList{
-  constructor(){
-    this.head = new Node("head");
+  constructor(head){
+    if(head){
+      this.head = head;
+    }else{
+      this.head = new Node("head");
+    }
     this.tail = this.head;
   }
 
