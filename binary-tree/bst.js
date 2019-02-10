@@ -41,3 +41,6 @@ class BST {
     return size;
   }
 }
+
+exports.BST = BST;
+exports.Node = Node;
