@@ -12,12 +12,14 @@ let preOrder = (node) => {
 }
 
 let preOrderLoop = (root) => {
-  let nodes = [];
-  nodes.push(root); 
+  let nodes = []; //使用数组来模拟堆栈
+  nodes.push(root); //将根节点推入堆栈
 
   while (nodes.length > 0) { 
+    //先访问当前节点
     let current = nodes.pop(); 
     console.log(`current node: ${current.data}`);
+    //由于是先访问左节点，所以入栈顺序是先右后左
     if (current.right) { 
       nodes.push(current.right); 
     } 
