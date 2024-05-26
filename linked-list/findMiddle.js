@@ -22,10 +22,10 @@ let findMiddleElement = (list) => {
 }
 
 let list = new LinkedList();
-list .add(new Node("first"));
-list .add(new Node("second"));
-list .add(new Node("third"));
-list .add(new Node("fourth"));
-list .add(new Node("fifth"));
+list.add(new Node("first"));
+list.add(new Node("second"));
+list.add(new Node("third"));
+list.add(new Node("fourth"));
+list.add(new Node("fifth"));
 
 console.log(findMiddleElement(list).data);

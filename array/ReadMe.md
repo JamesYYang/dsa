@@ -37,7 +37,7 @@ a[k]_address = base_address + (k-1)*type_size
 
 但是，如果这个数组中缺失的数字有多个呢？
 
-请自行思考一下哈，然后我给了一个[可能的解决方案。](./find-missing-number.js)
+请自行思考一下哈，然后我给了一个[可能的解决方案](./find-missing-number.js)
 
 
 ### 去除数组中的重复数字
